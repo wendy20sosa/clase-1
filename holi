@@ -1,0 +1,36 @@
+let x = 300;
+let y = 300;
+let d = 1;
+let label = "hello";
+let counter = 0;
+ 
+function setup() {
+  createCanvas(700, 700);
+  
+}
+
+function draw() {
+  //background(220);
+noStroke();
+  fill(random(90,255), random(30,50), random(155,100))
+ellipse(x, y, d, d);
+  
+   fill(255);
+ textAlign (CENTER);
+  text(label, x, y);
+ 
+counter++;
+  console.log(counter);
+
+
+  
+  d = dist(width/2, height/2, mouseX, mouseY);
+  x = random (0, width)
+  y = random (0, height)
+d = d + 1;
+x = x + 1;
+
+
+
+
+}
